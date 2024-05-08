@@ -1,0 +1,62 @@
+.sobre-novidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 2.5em;
+    gap: 1.5em;
+    background-color: var(--cinza-escuro);
+}
+
+.sobre-novidades__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--vermelho);
+    text-transform: uppercase;
+}
+
+.sobre-novidades__texto {
+    color: var(--cinza-claro);
+    line-height: 1.25em;
+    width: auto;
+}
+
+/* Tablets */
+@media screen and (min-width: 1024px) {
+    .sobre-novidades {
+        padding: 3.5em;
+        gap: 2em;
+    }
+
+    .sobre-novidades__titulo {
+        font-size: 2.5rem;
+        margin-bottom: 0.75em;
+    }
+
+    .sobre-novidades__texto {
+        font-size: 1.5rem;
+        width: 75vw;
+    }
+
+    .contato {
+        border-top: solid 2px var(--cinza-escuro);
+    }
+}
+
+/* Notebooks */
+@media screen and (min-width: 1360px) {
+    .sobre-novidades {
+        width: auto;
+        /* align-items: center; */
+        padding: 2.5em;
+    }
+
+    .sobre-novidades__titulo {
+        font-size: 2.5rem;
+        margin-bottom: 0.25em;
+    }
+
+    .sobre-novidades__texto {
+        font-size: 1.25rem;
+        width: 75vw;
+    }
+}

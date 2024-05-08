@@ -1,0 +1,32 @@
+.rodapé {
+    margin: 2em;
+    text-align: center;
+}
+
+.rodapé__texto {
+    color: var(--cinza);
+    font-size: 0.875rem;
+}
+
+.rodapé__texto a{
+    color: var(--cinza);
+    text-decoration: none;
+}
+
+/* Tablets */
+@media screen and (min-width: 1024px) {
+    .rodapé__texto {
+        font-size: 1.5rem;
+    }
+}
+
+/* Notebooks */
+@media screen and (min-width: 1360px) {
+    .rodapé__texto {
+        font-size: 1rem;
+    }
+
+    .rodapé__texto a:hover {
+        color: var(--roxo);
+    }
+}

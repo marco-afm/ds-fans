@@ -1,0 +1,214 @@
+/* .carrossel {
+
+} */
+
+.container__carrossel-imagem {
+    background-color: var(--vermelho);
+    text-align: center;
+    padding: 0.5em;
+    margin: 2em 0;
+    width: auto;
+}
+
+.container__carrossel-imagem img {
+    width: 82%;
+}
+
+.swiper {
+    margin: 2em 0;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin-bottom: 2em;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: var(--preto);
+    border: solid 2px var(--branco);
+    opacity: 100%;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--branco);
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.container-temporadas {
+    display: none;
+}
+
+/* Tablets */
+@media screen and (min-width: 1024px) {
+    .container__carrossel-imagem {
+        padding: 1em 0;
+        margin: 0;
+    }
+
+    .container__carrossel-imagem img {
+        width: 50%;
+    }
+    
+    .carrosel__container {
+        display: none;
+    }
+
+    .container-temporadas {
+        display: flex;
+        border-bottom: solid 2px var(--cinza-escuro);
+        padding: 4em 5em;
+    }
+
+    .temporadas__imagem {
+        margin-right: 3em;
+        width: 40vw;
+        border-radius: 8px;
+    }
+
+    .descrição__temporadas {
+        display: flex;
+        flex-direction: column;
+        margin: 3em 0;
+        text-align: left;
+        width: 45vw;
+    }
+
+    .temporadas__titulo {
+        font-size: 2.25rem;
+        font-weight: 700;
+        font-style: italic;
+        line-height: 1.25em;
+        margin-bottom: 1em;
+    }
+
+    .temporadas__descrição {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 0.75em;
+        color: var(--cinza);
+    }
+
+    .botão__assistir-agora {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--branco);
+        background-color: var(--roxo);
+        text-decoration: none;
+        font-size: 2.25rem;
+        font-weight: 700;
+        text-align: center;
+        width: 75%;
+        padding: 0.60em 0.4em;
+        border-radius: 50px;
+        margin-top: auto;
+    }
+
+    .botão-bloqueado {
+        background-color: var(--cinza);
+    }
+
+    .play-icone {
+        width: 7%;
+        margin-right: 0.5em;
+    }
+}
+
+/* Notebooks */
+@media screen and (min-width: 1360px) {
+    .carrossel {
+        border-bottom: solid 2px var(--cinza-escuro);
+        font-size: 1.5rem;
+    }
+
+    .container__carrossel-imagem {
+        padding: 0.5em 0;
+        background: linear-gradient(to right, rgba(238, 28, 35, 0), rgb(238, 28, 36), rgb(238, 28, 36), rgba(238, 28, 35, 0));
+        width: 100%;
+    }
+
+    .container__carrossel-imagem img {
+        width: 25%;
+    }
+
+    .conjunto-temporadas {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0;
+        padding: 2em 2em;
+    }
+
+    .container-temporadas { 
+        border-bottom: 0;
+        padding: 0;
+        width: 31vw;
+        padding-right: 0; 
+    }
+
+    .temporadas__imagem {
+        width: 40%;
+        margin-right: 1em;
+        border-radius: 4px;
+    }
+
+    .descrição__temporadas {
+        width: 50%;
+        margin: 1.5em 0;
+    }
+
+    .temporadas__titulo {
+        font-size: 1.125rem;
+    }
+
+    .temporadas__descrição {
+        font-size: 0.75rem;
+    }
+
+    .botão__assistir-agora {
+        font-size: 0.9rem;
+        width: 75%;
+        padding: 0.65em 0;
+    }
+
+    .botão__assistir-agora:hover {
+        background-color: var(--roxo-claro);
+    }
+
+    .botão-bloqueado:hover {
+        background-color: var(--cinza);
+    }    
+}
+
+/* Desktops */
+@media screen and (min-width: 1728px) {
+    .container__carrossel-imagem img{
+        width: 20%;
+    }
+
+    .container-temporadas {
+        width: 31vw;
+    }
+
+    .temporadas__imagem {
+        width: 45%;
+        border-radius: 6px;
+    }
+
+    .temporadas__titulo {
+        font-size: 1.35rem;
+    }
+
+    .temporadas__descrição {
+        font-size: 0.85rem;
+    }
+
+    .botão__assistir-agora {
+        font-size: 1.125rem;
+    }
+}

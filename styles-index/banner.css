@@ -1,0 +1,94 @@
+.banner {
+    background-image: url(../assets/banner-mobile.jpg);
+    background-size: cover; 
+    background-position: center;
+    width: 100vmin;
+    height: 100vmin;
+}
+
+.container__descrição {
+    padding: 0.25em 0 0.25em 0.75em;
+}
+
+.descrição__banner {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5em 0.75em;
+    border-left: solid 2px var(--branco);
+    padding: 0.25em 0 0.25em 0.75em;
+}
+
+.descrição__banner-titulo {
+    font-size: 1.75rem;
+    margin-bottom: 0.25em;
+    font-weight: bolder;
+}
+
+.descrição__banner-texto {
+    color: var(--cinza);
+    font-weight: 600;
+}
+
+/* Tablets */
+@media screen and (min-width:1024px) {
+    .banner {
+        background-image: url(../assets/banner-tablet.jpg);
+        width: 100%;
+        height: 56vmin;
+    }   
+
+    .container__descrição {
+        padding: 0.25em 0 0.25em 0.75em; 
+    }
+    
+    .descrição__banner {
+        margin: 3em 1em;
+        border-left: solid 3px;
+        padding: 0.5em 0 0.5em 1.25em;
+    }
+    
+    .descrição__banner-titulo {
+        font-size: 2.5rem;
+    }
+    
+    .descrição__banner-texto {
+        font-size: 1.5rem;
+    }
+}
+
+/* Notebooks */
+@media screen and (min-width: 1360px) {
+    .banner {
+        background-image: url(../assets/banner-notebooks.jpg);
+        background-position: left;
+        width: 100%;
+        height: 90vmin;
+    }   
+
+    .container__descrição {
+        padding: 1.5em 0 0 1.5em; 
+    }
+
+    .descrição__banner {
+        margin: 3em 1em;
+        border-left: solid 3px;
+        padding: 0.5em 0 0.5em 1.5em;
+    }
+
+    .descrição__banner-titulo {
+        font-size: 3rem;
+    }
+    
+    .descrição__banner-texto {
+        font-size: 1.65rem;
+        font-weight: 500;
+    }
+}
+
+/* Desktops */
+@media screen and (min-width: 1728px) {
+    .banner {
+        width: 100%;
+        height: 100vmin;
+    }
+}

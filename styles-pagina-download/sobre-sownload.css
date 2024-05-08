@@ -1,0 +1,104 @@
+.sobre-download {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2.5em;
+    gap: 3em;
+    align-items: center;
+    border-bottom: solid 2px var(--cinza-escuro);
+    background-color: var(--cinza-escuro);
+}
+
+.sobre-download__descrição,
+.sobre-download__aplicativo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.sobre-download__titulo {
+    color: var(--vermelho);
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sobre-download__texto {
+    line-height: 1.25em;
+    color: var(--cinza-claro);
+}
+
+.imagem-aplicativo {
+    width: 30%;
+    border-radius: 24px;
+}
+
+.sobre-download__link {
+    color: var(--branco);
+    text-decoration: none;
+    background-color: var(--roxo);
+    padding: 1em 2em;
+    border-radius: 50px;
+}
+
+/* Tablets */
+@media screen and (min-width: 1024px) {
+    .sobre-download {
+        padding: 3.5em;
+        gap: 3.5em;
+    }
+
+    .sobre-download__titulo {
+        font-size: 2.5rem;
+        margin-bottom: 0.75em;
+    }
+    
+    .sobre-download__texto {
+        font-size: 1.5rem;
+        width: 75vw;
+    }
+
+    .sobre-download__aplicativo {
+        gap: 2em;
+    }
+
+    .imagem-aplicativo {
+        width: 50%;
+        border-radius: 36px;
+    }
+
+    .sobre-download__link {
+        font-size: 2rem;
+    }
+}
+
+/* Notebooks */
+@media screen and (min-width: 1360px) {
+    .sobre-download {
+        padding: 2.5em;
+        gap: 3.5em;
+    }
+
+    .sobre-download__titulo {
+        font-size: 2.5rem;
+        margin-bottom: 0.5em;
+    }
+    
+    .sobre-download__texto {
+        font-size: 1.25rem;
+        width: 75vw;
+    }
+
+    .sobre-download__aplicativo {
+        gap: 2em;
+    }
+
+    .imagem-aplicativo {
+        width: 30%;
+        border-radius: 28px;
+    }
+
+    .sobre-download__link {
+        font-size: 1.25rem;
+    }
+}

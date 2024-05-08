@@ -1,0 +1,220 @@
+.novidades {
+    display: block;
+    text-align: center;
+    gap: 2.5em;
+    margin: 2em 0.25em;
+}
+
+.novidades__titulo {
+    background-color: var(--cinza-escuro);
+    padding: 1.125em 5em;
+    border-radius: 8px;   
+    margin-bottom: 1.5em;
+    width: 55%;
+}
+
+.novidades__texto {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.25em;
+}
+
+.novidades__sub-texto {
+    color: var(--cinza);
+    font-weight: 500;
+    margin: 1.5em 0;
+    line-height: 1.25em;
+}
+
+.texto-destaque-itálico {
+    font-style: italic;
+}
+
+.texto-destaque-vermelho {
+    color: var(--vermelho);
+}
+
+.nova-temporada__imagem {
+    margin: 0.75em 0;
+    width: 75%;
+    border-radius: 4px;
+}
+
+.descrição__nova-temporada {
+    display: none;
+}
+
+/* Tablets */
+@media screen and (min-width: 1024px) {
+    .novidades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3em 5em;
+        gap: 3em;
+    }
+
+    .container__novidades__textos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+        width: 100%;
+    }
+
+    .novidades__titulo {
+        padding: 2em 21vw;
+        border-radius: 16px;   
+        margin: 0;
+        width: 40%;
+    }
+
+    .novidades__texto {
+        font-size: 1.75rem;
+        line-height: 1.5em;
+        width: 82vw;
+    }
+    
+    .novidades__sub-texto {
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin: 0;
+        line-height: 1.5em;
+        width: 75vw;
+    }
+
+    .container-nova-temporada {
+        display: flex;
+        justify-content: space-between;
+        border-top: solid 2px var(--cinza-escuro);
+        padding-top: 4em;
+        width: 100%;
+    }
+
+    .nova-temporada__imagem {
+        margin-right: 3em;
+        width: 50%;
+        border-radius: 6px;
+    }
+
+    .descrição__nova-temporada {
+        display: flex;
+        flex-direction: column;
+        margin: 3em 0;
+        text-align: left;
+        width: 45vw;
+    }
+
+    .nova-temporada__titulo {
+        font-size: 2.5rem;
+        font-weight: 700;
+        font-style: italic;
+        line-height: 1.25em;
+        margin-bottom: 1em;
+    }
+
+    .nova-temporada__descrição {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 0.75em;
+        color: var(--cinza);
+    }
+
+    .nova-temporada__texto {
+        font-size: 1.25rem;
+        line-height: 1.40em;
+        margin-top: 2.5em;
+    }
+}
+
+/* Notebooks */
+@media screen and (min-width: 1360px) {
+    .novidades {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 3em;
+        gap: 0;
+    }
+
+    .container__novidades__textos {
+        margin-bottom: 0;
+        padding: 3em;
+        width: 46%;
+    }
+
+    .novidades__titulo {
+        padding: 1.5em 7vw;
+        width: 60%;
+    }
+
+    .novidades__texto {
+        font-size: 1.25rem;
+        width: 37vw;
+    }
+    
+    .novidades__sub-texto {
+        font-size: 1rem;
+        width: 35vw;
+    }
+
+    .container-nova-temporada {
+        border-top: 0;
+        border-left: solid 2px var(--cinza-escuro);
+        padding: 3em;
+        width: 46%;
+    }
+
+    .nova-temporada__imagem {
+        width: 45%;
+        border-radius: 4px;
+        margin-right: 2em;
+    }
+
+    .descrição__nova-temporada {
+        width: 35vw;
+    }
+
+    .nova-temporada__titulo {
+        font-size: 1.5rem;
+    }
+
+    .nova-temporada__descrição {
+        font-size: 1rem;
+    }
+
+    .nova-temporada__texto {
+        font-size: 0.9rem;
+    }
+}
+
+/* Desktops */
+@media screen and (min-width: 1728px) {
+    .novidades__titulo {
+        width: 50%;
+    }
+
+    .novidades__texto {
+        font-size: 1.5rem;
+    }
+
+    .novidades__sub-texto {
+        font-size: 1.125rem;
+    }
+
+    .nova-temporada__imagem {
+        border-radius: 6px;
+    }
+
+    .nova-temporada__titulo {
+        font-size: 1.75rem;
+    }
+
+    .nova-temporada__descrição {
+        font-size: 1.25rem;
+    }
+
+    .nova-temporada__texto {
+        font-size: 1.125rem;
+    }
+}
