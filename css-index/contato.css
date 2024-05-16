@@ -25,20 +25,26 @@ hr {
     display: none;
 }
 
-.container__cadastro {
+.container-formulario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 2em;
+}
+
+.container__cadastro {
     padding: 0.875em;
     background-color: transparent;
-    color: var(---branco);
+    color: var(---branco);   
     font-size: 1rem;
     font-family: var(--font-principal);
-    width: 75vw;
+    width: 60vw;
     border-radius: 40px;
     border-color: var(---branco);
 }
 
 .container__cadastro::placeholder {
-    color: var(---branco);
+    color: var(--cinza-claro);
     font-size: 1rem;
     font-family: var(--font-principal);
     background-image: url(../assets/Email.png);
@@ -46,6 +52,18 @@ hr {
     background-size: contain;
     background-position: 0.25em;
     padding-left: 2.75em;
+}
+
+.botão-enviar {
+    width: 15%;
+    border-radius: 100%;
+    border: transparent;
+    padding: 0.75em 1em;
+    cursor: pointer;
+}
+
+.img-enviar {
+    width: 100%;
 }
 
 /* Tablets */
@@ -82,30 +100,31 @@ hr {
         text-align: center;
     }
 
+    .container-formulario {
+        justify-content: center;
+        gap: 2em;
+    }
+
     .container__cadastro {
         margin: 0;
-        padding: 0.875em;
-        background-color: transparent;
-        color: var(---branco);
         font-size: 1.25rem;
-        font-family: var(--font-principal);
         width: 50vw;
-        border-radius: 40px;
-        border-color: var(---branco);
     }
 
     .container__cadastro::placeholder {
-        color: var(---branco);
         font-size: 1.25rem;
-        font-family: var(--font-principal);
-        background-image: url(../assets/Email.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 0.25em;
-        padding-left: 2.75em;
+    }
+
+    .botão-enviar {
+        width: 7%;
+        padding: 1em 1.125em;
+    }
+    
+    .img-enviar {
+        width: 100%;
+        padding: 0;
     }
 }
-
 
 /* Notebooks */
 @media screen and (min-width: 1360px) {
@@ -151,9 +170,18 @@ hr {
         margin: 2em 0;
     }
 
+    .container-formulario {
+        justify-content: space-between;
+    }
+
     .container__cadastro {
         width: 25vw;
         margin-bottom: auto;
+    }
+
+    .botão-enviar {
+        width: 12%;
+        padding: 1em 1.25em;
     }
 }
 

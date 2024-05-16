@@ -1,0 +1,34 @@
+@import url("../css-index/reset.css");
+@import url("../css-index/cabecalho.css");
+@import url("../css-index/banner.css");
+@import url("../css-index/novidades.css");
+@import url("../css-index/carrossel.css");
+@import url("../css-index/contato.css");
+@import url("../css-index/rodape.css");
+
+@import url("../css-sobre-nos/bio.css");
+@import url("../css-novidades/sobre-novidades.css");
+@import url("../css-temporadas/sobre-temporadas.css");
+@import url("../css-meu-perfil/sobre-meu-perfil.css");
+@import url("../css-pagina-download/sobre-download.css");
+
+:root {
+    --vermelho: #ee1c24;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --cinza-escuro: #161616;
+    --cinza: #666666;
+    --cinza-claro: #999999;
+    --roxo: #3F00BD;
+    --roxo-claro: #5508f0;
+
+    --font-principal: "Inter";
+    --font-secundaria: "Vampiro One";
+}
+
+body {
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    color: var(--branco);
+    background-color: var(--preto);
+}

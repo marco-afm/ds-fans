@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./styles-index/style.css">
+    <link rel="stylesheet" href="./css-index/style.css">
     <title>DSfans - Página Inicial</title>
 </head>
 <body>
@@ -21,9 +21,6 @@
             </label>
 
             <ul class="cabeçalho__menu">
-                <li class="cabeçalho__menu-item">
-                    <a class="cabeçalho__menu-link" href="index.html">Página Inicial</a>
-                </li>
                 <li class="cabeçalho__menu-item">
                     <a class="cabeçalho__menu-link" href="sobre-nos.html">Sobre nós</a>
                 </li>
@@ -42,12 +39,11 @@
             </ul>
         </div>
 
-        <img class="cabeçalho__logo" src="./assets/DSfans.png" alt="DSfans">
+        <a class="container__cabeçalho__logo" href="index.html">
+            <img class="cabeçalho__logo" src="./assets/DSfans.png" alt="DSfans">
+        </a>
 
         <ul class="cabeçalho__navegação">
-            <li class="navegação__item">
-                <a class="navegação__link" href="index.html">Página Inicial</a>
-            </li>
             <li class="navegação__item">
                 <a class="navegação__link" href="novidades.html">Novidades</a>
             </li>
@@ -218,8 +214,14 @@
 
         <div class="contato__input">
             <img class="contato__logo" src="./assets/DSfans.png" alt="DSfans">
-            <input class="container__cadastro" type="email" id="input__contato" placeholder="Cadastre seu e-mail aqui">
-        </div>        
+
+            <form class="container-formulario" action="https://formsubmit.co/marcaoafm@gmail.com" method="POST">
+                <input class="container__cadastro" type="email" id="input__contato" placeholder="Cadastre seu e-mail aqui" required>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://marco-afm.github.io/ds-fans/">
+                <button class="botão-enviar" type="submit"><img class="img-enviar" src="./assets/enviar.png" alt="Enviar"></button>
+            </form>
+        </div>      
     </section>
 
     <section class="rodapé">

@@ -110,10 +110,6 @@
         margin-top: auto;
     }
 
-    .botão-bloqueado {
-        background-color: var(--cinza);
-    }
-
     .play-icone {
         width: 7%;
         margin-right: 0.5em;
@@ -179,10 +175,6 @@
     .botão__assistir-agora:hover {
         background-color: var(--roxo-claro);
     }
-
-    .botão-bloqueado:hover {
-        background-color: var(--cinza);
-    }    
 }
 
 /* Desktops */
